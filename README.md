@@ -1,12 +1,15 @@
 # sqlalchemy-challenge
-## Module 10 challenge
+
+# Module 10 challenge
 
 ## Overview
-This project conducts a detailed analysis of climate data for Hawaii. The analysis includes precipitation analysis, station analysis, temperature observation analysis, and a temperature statistics API. The dataset includes measurements from various stations across Hawaii.
+This project conducts analysis of climate data for Hawaii. The analysis includes precipitation analysis, station analysis, temperature observation analysis, and a temperature statistics API. The dataset includes measurements from various stations across Hawaii. There is also an interactive flask project for the seconf part of this project.
 
 ### Files
 - `climate.ipynb`: Jupyter Notebook containing the climate data analysis including visualizations.
 - `app.py`: Python Flask application providing an API for accessing the results of the climate data analysis.
+- `hawaii_measurements.csv`: Temp, rain, and date data recorded by stations
+- `hawaii_stations.csv`: General data about the weather stations in Hawaii. 
 
 ## Installation
 
@@ -33,15 +36,9 @@ This project conducts a detailed analysis of climate data for Hawaii. The analys
 2. Run the command: `python app.py` to start the Flask server.
 3. Access the API at `http://127.0.0.1:5000/` in your web browser. Available routes will be listed on the homepage.
 
-## API Endpoints
+## Flask Route Endpoints
 - `/`: Home page listing all available routes.
 - `/api/v1.0/precipitation`: Returns JSON data about precipitation for the last 12 months.
 - `/api/v1.0/stations`: Returns a JSON list of weather stations in the dataset.
 - `/api/v1.0/tobs`: Returns JSON data about temperature observations for the most active station over the last year.
 - `/api/v1.0/<start>` and `/api/v1.0/<start>/<end>`: Returns JSON data about the minimum, average, and maximum temperatures between the given start date or date range.
-
-## Acknowledgments
-This project utilizes data provided by the Hawaii Department of Land and Natural Resources.
-
-## License
-This project is open source and available under the MIT License.
